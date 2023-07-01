@@ -34,11 +34,9 @@ void loop() {
   digitalWrite(trigPin, LOW);
   // Reads the echoPin, returns the sound wave travel time in microseconds
   duration = pulseIn(echoPin, HIGH);
-  
+
   if (duration < 3000)
   {
-    tone(buzzer, 350, 15);
+    tone(buzzer, 1000, 15);
   }
 }
-
-
